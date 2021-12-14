@@ -12,4 +12,5 @@ Raspberry Pi 4
 ラズパイを用いたLED点灯プログラム。
 
 echo 1 > /dev/myled0//点灯
+
 echo 0 > /dev/myled0//消灯
