@@ -17,7 +17,7 @@ $sudo rmmod myled
 
 $sudo insmod myled.ko
 
-$chmod 666 /dev/myled0
+$sudo chmod 666 /dev/myled0
 
 $echo 1 > /dev/myled0//点灯
 
