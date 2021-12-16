@@ -30,10 +30,10 @@ Raspberry Pi 4
 # 配線
 ラズパイの２５ピンから抵抗、LED、GNDピンの順番に配線する。以下が今回使用した配線例である。
 
-![IMG_9467](https://user-images.githubusercontent.com/79555986/146311879-e3e32a54-a939-4b0b-a439-a3e6f5d81c89.jpg)
+![IMG_9466](https://user-images.githubusercontent.com/79555986/146312253-9c89bbf7-3192-4e9a-b498-68832e0b7a2f.jpg)
 
+![IMG_9467](https://user-images.githubusercontent.com/79555986/146312261-7c2673ab-5f6a-4ce4-8418-89f8c606d8db.jpg)
 
-![IMG_9466](https://user-images.githubusercontent.com/79555986/146311973-68efc032-e188-45a4-b3c1-1d06e6e1a5db.jpg)
 
 # 基本的な動作：
 ### ラズパイを用いたLED点灯プログラム。
