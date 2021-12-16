@@ -18,9 +18,9 @@ Raspberry Pi 4
 ・LANケーブル
 
 ### 配線系統
-・[抵抗240Ω×1](https://onl.tw/hu2GyUC)
+・[抵抗240Ω](https://onl.tw/hu2GyUC)×1
 
-・[発光ダイオード(LED)×1](https://onl.tw/kVm3vah)
+・[発光ダイオード(LED)](https://onl.tw/kVm3vah)×1
 
 ・ブレットボード
 
