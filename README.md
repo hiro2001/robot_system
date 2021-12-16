@@ -34,13 +34,25 @@ Raspberry Pi 4
 # 基本的な動作：
 ラズパイを用いたLED点灯プログラム。
  ```
-$make
-$sudo insmod myled.ko
-$sudo rmmod myled
-$sudo insmod myled.ko
-$sudo chmod 666 /dev/myled0
-$echo 1 > /dev/myled0//点灯
-$echo 0 > /dev/myled0//消灯
+make
+ ```
+ ```
+sudo insmod myled.ko
+ ```
+ ```
+sudo rmmod myled
+ ```
+ ```
+sudo insmod myled.ko
+ ```
+ ```
+sudo chmod 666 /dev/myled0
+ ```
+ ```
+echo 1 > /dev/myled0//点灯
+ ```
+ ```
+echo 0 > /dev/myled0//消灯
  ```
 
 Copyright (c) 2021 Ryuich Ueda
