@@ -13,7 +13,7 @@ Raspberry Pi 4
 ### OS系統
 ・Ubuntu20.04LTS(PC)
 
-・Raspberry Pi 4([Ubuntu20.04マイクロSD内蔵](https://onl.tw/a45isMj)(c)Ryuich Ueda)
+・Raspberry Pi 4([Ubuntu20.04マイクロSD内蔵](https://onl.tw/a45isMj)Copyright (c) 2021 Ryuich Ueda)
 
 ・LANケーブル
 
