@@ -1,7 +1,7 @@
 # robot_system
 Chiba Institute of Technology robot system for class
 
-課題１のリポジトリ保管庫として使用。
+課題１のリポジトリとして使用。
 
 # 開発環境:
 Ubuntu20.04
