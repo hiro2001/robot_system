@@ -34,6 +34,7 @@ Raspberry Pi 4
 # 基本的な動作：
 ラズパイを用いたLED点灯プログラム。
  ```
+$make
 $sudo insmod myled.ko
 $sudo rmmod myled
 $sudo insmod myled.ko
