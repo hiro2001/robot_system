@@ -5,19 +5,25 @@ Chiba Institute of Technology robot system for class
 
 # 開発環境:
 Ubuntu20.04
+
 Raspberry Pi 4
 <span style="color: red; ">ラズパイ３だと動かないと思われるため注意。</span>
 
 # 使用機器等
 ### OS系統
 ・Ubuntu20.04LTS(PC)
+
 ・Raspberry Pi 4([Ubuntu20.04マイクロSD内蔵](https://onl.tw/a45isMj)(c)Ryuich Ueda)
+
 ・LANケーブル
 
 ### 配線系統
 ・[抵抗240Ω×1](https://onl.tw/hu2GyUC)
+
 ・[発光ダイオード(LED)×1](https://onl.tw/kVm3vah)
+
 ・ブレットボード
+
 ・ジャンパー線
 
 
@@ -27,7 +33,7 @@ Raspberry Pi 4
 
 # 基本的な動作：
 ラズパイを用いたLED点灯プログラム。
-'''
+ ```
 $sudo insmod myled.ko
 
 $sudo rmmod myled
@@ -39,7 +45,8 @@ $sudo chmod 666 /dev/myled0
 $echo 1 > /dev/myled0//点灯
 
 $echo 0 > /dev/myled0//消灯
-'''
+ ```
+
 Copyright (c) 2021 Ryuich Ueda
 
 > This program is free software; you can redistribute it and/or
