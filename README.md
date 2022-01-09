@@ -42,12 +42,14 @@ make
  ```
 sudo insmod myled.ko
  ```
+ もしすでにあるというエラーが出た場合下のコードにより解決する。
  ```
 sudo rmmod myled
  ```
  ```
 sudo insmod myled.ko
  ```
+ エラーが出なかった場合こちらから。
  ```
 sudo chmod 666 /dev/myled0
  ```
