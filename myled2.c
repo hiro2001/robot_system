@@ -11,6 +11,7 @@
 #include <linux/device.h>
 #include <linux/uaccess.h>
 #include <linux/io.h>
+#include <linux/delay.h>
 
 MODULE_AUTHOR("Ryuichi Ueda and Hiroyuki Matsuda");
 MODULE_DESCRIPTION("driver for LED control");
@@ -26,16 +27,35 @@ static volatile u32 *gpio_base = NULL;
 
 static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_t* pos)
 {
-	char c;
+	char c, c2 = '5';
 	if(copy_from_user(&c,buf,sizeof(char)))
 		return -EFAULT;
   printk(KERN_INFO "receive %c\n", c);
 
 
-	if(c == '0')
+	if(c == '0'){
+		if(c2 == '1'){//赤信号変更（車）
+			gpio_base[7] = 1 << 23;
+			gpio_base[7] = 1 << 24;
+			gpio_base[10] = 1 << 25;
+			ssleep(3);
+		}
+		gpio_base[7] = 1 << 23;
+		gpio_base[10] = 1 << 24;
 		gpio_base[10] = 1 << 25;
-	else if(c == '1')
+		c2 = c;
+	}
+	else if(c == '1'){//青信号変更（車）
+		gpio_base[10] = 1 << 23;
+		gpio_base[10] = 1 << 24;
 		gpio_base[7] = 1 << 25;
+		c2 = c;
+	}
+	else if(c == '5'){
+		gpio_base[10] = 1 << 23;
+		gpio_base[10] = 1 << 24;
+		gpio_base[10] = 1 << 25;
+	}
   return 1;
 }
 
@@ -88,6 +108,16 @@ static int __init init_mod(void)
 	const u32 shift1 = (one%10)*3;//15bit
 	const u32 mask1 = ~(0x7 << shift1);//11111111111111000111111111111111
 	gpio_base[index1] = (gpio_base[index1] & mask1) | (0x1 << shift1);//001: output flag
+	const u32 two = 24;
+	const u32 index2 = two/10;//GPFSEL2
+	const u32 shift2 = (two%10)*3;//15bit
+	const u32 mask2 = ~(0x7 << shift2);//11111111111111000111111111111111
+	gpio_base[index2] = (gpio_base[index2] & mask2) | (0x1 << shift2);//001: output flag
+	const u32 three = 24;
+	const u32 index3 = three/10;//GPFSEL2
+	const u32 shift3 = (three%10)*3;//15bit
+	const u32 mask3 = ~(0x7 << shift3);//11111111111111000111111111111111
+	gpio_base[index3] = (gpio_base[index3] & mask3) | (0x1 << shift3);//001: output flag
 	
 	return 0;
 }
