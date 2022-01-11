@@ -36,7 +36,7 @@ https://www.raspberrypi.org/app/uploads/2012/02/BCM2835-ARM-Peripherals.pdf
 
 
 # 配線
-![S__36421635](https://user-images.githubusercontent.com/79555986/149022578-fe899dd7-63ab-4fa5-b953-546c78370146.jpg)
+<img src="https://user-images.githubusercontent.com/79555986/149022578-fe899dd7-63ab-4fa5-b953-546c78370146.jpg" width="320px">
 
 ### 基本プログラム
 ラズパイの２５ピンから抵抗、LED、GNDピンの順番に配線する。以下が今回使用した配線例である。
