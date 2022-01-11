@@ -18,7 +18,8 @@ Raspberry Pi 4
 ## OS系統
 ・Ubuntu20.04LTS(PC)
 
-・Raspberry Pi 4([Ubuntu20.04マイクロSD内蔵](https://onl.tw/a45isMj)Copyright (c) 2021 Ryuich Ueda)
+・Raspberry Pi 4([Ubuntu20.04マイクロSD内蔵](https://onl.tw/a45isMj)Copyright (c) 2021 Ryuich Ueda)  
+https://www.raspberrypi.org/app/uploads/2012/02/BCM2835-ARM-Peripherals.pdf
 
 ・LANケーブル
 
@@ -35,6 +36,8 @@ Raspberry Pi 4
 
 
 # 配線
+![S__36421635](https://user-images.githubusercontent.com/79555986/149022578-fe899dd7-63ab-4fa5-b953-546c78370146.jpg)
+
 ### 基本プログラム
 ラズパイの２５ピンから抵抗、LED、GNDピンの順番に配線する。以下が今回使用した配線例である。
 
@@ -43,6 +46,12 @@ Raspberry Pi 4
 <img src="https://user-images.githubusercontent.com/79555986/146312261-7c2673ab-5f6a-4ce4-8418-89f8c606d8db.jpg" width="320px">
 
 ### 信号プログラム
+抵抗も可能であれば挟むとよい
+
+<img src="https://user-images.githubusercontent.com/79555986/149022687-42447cc6-9b4b-4a39-a5aa-4f8388286c1a.jpg" width="320px">
+
+<img src="https://user-images.githubusercontent.com/79555986/149022694-b21d149f-f002-4d02-95ff-8f5640d2c3dc.jpg" width="320px">
+
 
 
 # 基本的な動作：
