@@ -149,6 +149,7 @@ https://youtu.be/FJ_8f3ITBO4
  # ライセンス
 
 Copyright (c) 2021 Ryuich Ueda
+Copyright (c) 2021 Hiroyuki Matsuda
 
 > This program is free software; you can redistribute it and/or
 > modify it under the terms of the GNU General Public License
