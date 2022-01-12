@@ -32,7 +32,12 @@ https://www.raspberrypi.org/app/uploads/2012/02/BCM2835-ARM-Peripherals.pdf
 ・ブレットボード
 
 ・ジャンパー線
-#### 信号プログラム
+### 信号プログラム
+・[発光ダイオード(LED)](https://www.amazon.co.jp/gp/product/B0952Y3VBR/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&th=1)×1
+
+・ブレットボード
+
+・ジャンパー線
 
 
 # 配線
